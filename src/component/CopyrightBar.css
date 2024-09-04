@@ -1,0 +1,45 @@
+/* General styles */
+.copyright-bar {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #b8bebe; /* Background color */
+    color: #0b0303; /* Text color */
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #003366;
+    position: relative;
+    bottom: 0;
+  }
+  
+  .copyright-bar p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: larger;
+  }
+  
+  .privacy-policy-link {
+    color: #ffdd57; /* Link color */
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .privacy-policy-link:hover {
+    color: #ffb347; /* Hover color */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .copyright-bar {
+      padding: 10px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .copyright-bar {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+  

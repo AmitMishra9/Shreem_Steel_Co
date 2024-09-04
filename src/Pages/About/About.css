@@ -1,0 +1,159 @@
+/* About.css */
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Section Styling */
+.about__section {
+  margin-bottom: 30px;
+}
+
+.about__section-header {
+  font-size: 2rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/*-- First Section: Image and Text Side by Side--*/
+
+.about__section--intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* To allow wrapping on smaller screens */
+  border-radius: 25px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  padding: 25px  35px;
+}
+.about__intro-header{
+      position: relative;
+      top: -55px;
+      font-size: 2rem;
+}
+
+.about__image{
+   border-radius: 15px;
+
+}
+
+.about__image,
+.about__intro-text {
+  width: 48%;
+  height: auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Second Section: Cards Display */
+.about__section--cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  gap: 20px;
+}
+
+.about__card {
+  flex: 1 1 calc(33.33% - 20px); /* 3 cards in a row */
+  min-width: 250px;
+  border: 1px solid #000;
+  padding: 25px 35px;
+  text-align: center;
+  border-radius: 14px;
+}
+
+.about__card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+/* Third Section: Vision with One Image and Text */
+.about__section--vision {
+  display: block;
+  align-items: center;
+  justify-content: space-between; /* Ensures space between text and image */
+  flex-wrap: wrap; /* To handle smaller screens */
+  text-align: center; /* Aligns text to the left */
+  background-color: aliceblue;
+  padding: 25px 35px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+
+.about__vision-image {
+  width: 35%; /* Adjusts image width */
+  height: auto;
+  border-radius: 100px;
+}
+
+/* Responsive Design Adjustments */
+
+/* For tablets (between 600px and 900px) */
+@media (max-width: 900px) {
+  .about__section--intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__image,
+  .about__intro-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about__section--cards {
+    justify-content: center;
+  }
+
+  .about__card {
+    flex: 1 1 45%; /* 2 cards in a row */
+  }
+
+  .about__section--vision {
+    flex-direction: row; /* Ensures image stays on the right for tablet */
+    justify-content: space-between;
+
+  }
+
+  .about__vision-text,
+  .about__vision-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  
+}
+
+/* For mobile phones (less than 600px) */
+@media (max-width: 600px) {
+  .about__section--intro,
+  .about__section--vision {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__image,
+  .about__intro-text,
+  .about__vision-text,
+  .about__vision-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about__section--cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

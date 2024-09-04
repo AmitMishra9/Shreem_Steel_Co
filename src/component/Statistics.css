@@ -1,0 +1,79 @@
+.statistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10%;
+    background-image: url('../assets/images/st.PNG'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .statistics-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 47, 95, 0.7); /* Adjust the last value (0.7) for opacity */
+    z-index: 1;
+   
+  }
+  
+  .stat-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 150px; /* Responsive flex basis */
+    max-width: 200px;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+  }
+.s-item{
+     font-size:1.02rem;
+     font-weight: 800;
+  }
+  
+  .stat-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Responsive breakpoints */
+  @media (min-width: 768px) {
+    .stat-item {
+      flex: 1 1 200px;
+    }
+    .statistics-container {
+      background-position: center 30%; /* Adjust vertical position for tablets */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .stat-item {
+      flex: 1 1 250px;
+    }
+    .statistics-container {
+      background-position: center 20%; /* Adjust vertical position for desktops */
+    }
+  }
+  
+  /* Additional breakpoint for larger screens */
+  @media (min-width: 1440px) {
+    .statistics-container {
+      background-position: center 10%; /* Adjust vertical position for larger desktops */
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 767px) {
+    .statistics-container {
+      padding: 30px;
+      background-position: center bottom; /* Adjust for mobile */
+    }
+  }

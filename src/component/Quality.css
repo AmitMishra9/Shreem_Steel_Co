@@ -1,0 +1,101 @@
+.section {
+  background-image: url('../assets/images/fac1.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 10px 15px;
+  color: rgb(250, 244, 244);
+  text-align: center;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 30px;
+  border-radius: 10px;
+ /* background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better text readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
+}
+
+.section-content h2 {
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin-bottom: 40px; /* Add more spacing for separation */
+}
+
+.main-text {
+  margin-bottom: 30px;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.value.center {
+  margin: 0 auto; /* Centers the element horizontally */
+}
+
+/* Alternative: Using nth-child to specifically target the fifth div */
+.values .value:nth-child(5) {
+  margin: 0 auto; /* Centers the fifth child horizontally */
+}
+.value {
+  padding: 20px;
+  border-radius: 8px;
+  /*background: rgba(255, 255, 255, 0.1); /* Slight background color for better readability */
+  text-align: left; /* Align text to left for better readability */
+}
+
+.value h3 {
+  margin-bottom: 12px;
+  color: whitesmoke;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.value p {
+  font-size: 1.08rem;
+  line-height:1.5; 
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .values {
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows values to wrap on multiple lines if needed */
+    gap: 30px; /* Increased gap for better spacing between items */
+    justify-content: space-between;
+  }
+
+  .value {
+    flex: 1 1 45%; /* Each value takes roughly 45% of the container width */
+    max-width: 48%; /* Prevents values from becoming too wide */
+  }
+}
+
+@media (max-width: 767px) {
+  .section-content {
+    padding: 20px;
+  }
+
+  .value {
+    padding: 15px;
+  }
+
+  .section-content h2 {
+    font-size: 2rem; /* Slightly smaller heading for smaller screens */
+  }
+
+  .section-content p {
+    font-size: 1.1rem; /* Adjust text size for readability on smaller screens */
+  }
+}

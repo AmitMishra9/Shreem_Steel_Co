@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6; /* Adjust line height for better readability */
+    
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; /* Bold for headings */
+  }
+  
+  p {
+    font-weight: 300; /* Light weight for body text */
+    font-size: 16px; /* Base font size for paragraphs */
+  }
+  
+  button, input, a {
+    font-family: 'Poppins', sans-serif; /* Ensuring UI elements match the font */
+    font-weight: 500; /* Slightly bolder for emphasis */
+  }
+  

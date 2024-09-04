@@ -1,0 +1,55 @@
+/* Company.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 55px;
+    margin: 15px;
+    background-color: #ffffff;
+    text-align: center; /* Center text for all screen sizes */
+  }
+  
+  .text-container {
+    max-width: 1500px; /* Set a max-width for better readability */
+  }
+  
+  .title {
+    position: relative;
+    font-size:25px; /* Base font size for smaller screens */
+    color: gray; /* Changed color to blue */
+    margin-bottom: 20px;
+  }
+  
+.description {
+    font-size: 1.2rem; /* Base font size for smaller screens */
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+  
+  /* Animated Button */
+  .animated-button {
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Default button color */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .title {
+      font-size: 2.08rem; /* Larger font size for larger screens */
+      
+    }
+  
+    .description {
+      font-size: 18px; /* Larger font size for larger screens */
+    }
+  }
+  
